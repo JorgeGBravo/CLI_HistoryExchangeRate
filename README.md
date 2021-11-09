@@ -1,7 +1,7 @@
 exrates
 =======
 
-my description
+CLI based on API Frankfurter and generates a tool for exchange rates quickly
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/exrates.svg)](https://npmjs.org/package/exrates)

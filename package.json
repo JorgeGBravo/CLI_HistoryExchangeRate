@@ -1,6 +1,6 @@
 {
   "name": "exrates",
-  "description": "my description",
+  "description": "CLI based on API Frankfurter and generates a tool for exchange rates quickly",
   "version": "0.0.0",
   "author": "Jorge González Bravo @JorgeGBravo",
   "bin": {
