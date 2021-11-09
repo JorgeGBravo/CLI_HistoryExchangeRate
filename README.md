@@ -28,27 +28,10 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`exrates hello`](#exrates-hello)
 * [`exrates help [COMMAND]`](#exrates-help-command)
 * [`exrates history`](#exrates-history)
+* [`exrates convert`](#exrates-convert)
 
-## `exrates hello`
-
-Describe the command here
-
-```
-USAGE
-  $ exrates hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src/commands/hello.js](https://github.com/JorgeGBravo/exrates/blob/v0.0.0/src/commands/hello.js)_
 
 ## `exrates help [COMMAND]`
 
@@ -69,19 +52,43 @@ _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.3
 
 ## `exrates history`
 
+Tool to easily collect historical exchange rates, between currencies.
+
+```
+USAGE
+  $ exrates history
+
+OPTIONS
+  -b, --base=base      type of currency
+  -e, --end=end        end date
+  -s, --start=start    start date
+  -t, --symbol=symbol  currency to change
+
+DESCRIPTION
+  Tool to easily collect historical exchange rates, between currencies.
+  Example:
+             history --start 2021-02-01 --end 2021-02-02 --base USD --symbol EUR
+```
+
+_See code: [src/commands/history.js](https://github.com/JorgeGBravo/exrates/blob/v0.0.0/src/commands/history.js)_
+
+## `exrates convert`
+
 Describe the command here
 
 ```
 USAGE
-  $ exrates history --start=2021-02-01 --end=2021-02-02 --base=USD --symbol=EUR
+  $ exrates convert
 
 OPTIONS
-  -s --start  start date 
-  -e --end    end date 
-  -b --base   type of currency 
-  -e --end    currency to change 
+  -a, --amount=amount   amount to change
+  -f, --from=from       type of currency to change
+  -t, --to=to           exchange rate
 
 DESCRIPTION
+  ...
+  Extra documentation goes here
+```
 
-Tool to easily collect historical exchange rates, between currencies.
+_See code: [src/commands/convert.js](https://github.com/JorgeGBravo/exrates/blob/v0.0.0/src/commands/convert.js)_
 
