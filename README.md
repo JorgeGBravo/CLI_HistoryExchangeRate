@@ -73,15 +73,15 @@ Describe the command here
 
 ```
 USAGE
-  $ exrates history
+  $ exrates history --start=2021-02-01 --end=2021-02-02 --base=USD --symbol=EUR
 
 OPTIONS
-  -n, --name=name  name to print
+  -s --start  start date 
+  -e --end    end date 
+  -b --base   type of currency 
+  -e --end    currency to change 
 
 DESCRIPTION
 
 Tool to easily collect historical exchange rates, between currencies.
 
-
-_See code: [src/commands/history.js](https://github.com/JorgeGBravo/exrates/blob/v0.0.0/src/commands/history.js)_
-<!-- commandsstop -->

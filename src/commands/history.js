@@ -47,13 +47,15 @@ class HistoryCommand extends Command {
 
 HistoryCommand.description = `
 Tool to easily collect historical exchange rates, between currencies.
+Example:
+          history --start 2021-02-01 --end 2021-02-02 --base USD --symbol EUR
 `
 
 HistoryCommand.flags = {
-  base: flags.string({char: 'n', description: 'type of currency'}),
-  symbol: flags.string({char: 'n', description: 'currency to change'}),
-  start: flags.string({char: 'n', description: 'start date'}),
-  end: flags.string({char: 'n', description: 'end date'}),
+  base: flags.string({char: 'b', description: 'type of currency'}),
+  symbol: flags.string({char: 't', description: 'currency to change'}),
+  start: flags.string({char: 's', description: 'start date'}),
+  end: flags.string({char: 'e', description: 'end date'}),
 }
 
 module.exports = HistoryCommand
