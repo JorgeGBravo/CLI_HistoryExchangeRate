@@ -86,8 +86,9 @@ OPTIONS
   -t, --to=to           exchange rate
 
 DESCRIPTION
-  ...
-  Extra documentation goes here
+  Obtener el valor de cambio de una cantidad de dinero a otro tipo de moneda
+  Example:  
+            convert --amount=50 --from=EUR --to=USD
 ```
 
 _See code: [src/commands/convert.js](https://github.com/JorgeGBravo/exrates/blob/v0.0.0/src/commands/convert.js)_

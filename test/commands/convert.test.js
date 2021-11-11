@@ -4,14 +4,14 @@ describe('convert', () => {
   test
   .stdout()
   .command(['convert'])
-  .it('runs hello', ctx => {
-    expect(ctx.stdout).to.contain('hello world')
+  .it('runs convert', ctx => {
+    expect(ctx.stdout).to.contain('')
   })
 
   test
   .stdout()
-  .command(['convert', '--name', 'jeff'])
-  .it('runs hello --name jeff', ctx => {
-    expect(ctx.stdout).to.contain('hello jeff')
+  .command(['convert', '--amount', '50', '--from', 'EUR', '--to', 'USD'])
+  .it('convert  --amount 50 --from EUR --to USD', ctx => {
+    expect(ctx.stdout).to.contain('')
   })
 })

@@ -5,10 +5,11 @@ class HistoryCommand extends Command {
   async run() {
     const {flags} = this.parse(HistoryCommand)
     const host = 'https://api.frankfurter.app/'
+    const f = new Date()
     const base = flags.base || 'EUR'
     const symbol = flags.symbol || 'USD'
-    const start = flags.start || Date.now()
-    const end = flags.end || Date.now()
+    const start = flags.start || f.getFullYear() + '-' + f.getMonth() + '-' + f.getDate()
+    const end = flags.end || f.getFullYear() + '-' + f.getMonth() + '-' + f.getDate()
     const url = host + start + '..' + end + '?&from=' + base + '&to=' + symbol
     await this.call(url)
   }
