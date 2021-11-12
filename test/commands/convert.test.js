@@ -5,13 +5,13 @@ describe('convert', () => {
   .stdout()
   .command(['convert'])
   .it('runs convert', ctx => {
-    expect(ctx.stdout).to.contain('')
+    expect(typeof ctx.stdout === typeof 1.0)
   })
 
   test
   .stdout()
   .command(['convert', '--amount', '50', '--from', 'EUR', '--to', 'USD'])
   .it('convert  --amount 50 --from EUR --to USD', ctx => {
-    expect(ctx.stdout).to.contain('')
+    expect(typeof ctx.stdout === typeof 1.0)
   })
 })
